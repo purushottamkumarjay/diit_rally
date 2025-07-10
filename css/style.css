@@ -1,126 +1,88 @@
-
-@media (max-width:2560px) {
-    .wheelf{
-        position: absolute;
-        max-width: 100%;
-        margin-top: -90px;
-        margin-left: 55px;
+ /* body {
+      font-family: Arial, sans-serif;
     }
 
-
-
-
-
-
-.ani{
-    animation-name: dfgdf;
-    animation-timing-function: linear;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-   }
-   @keyframes dfgdf{
-    from{
-        margin-left:0px;    
-    }
-    to{
-        margin-left:800px;    
-
-    }
-   }
-
-
-
-
-
-
-
-
-
-
-
-   .carr{
-    animation-name: carTy;
-    animation-timing-function: linear;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-   }
-   @keyframes carTy{
-    from{
-        margin-left:0px;    
-    }
-    to{
-        margin-left:800px;    
-
-    }
-   }
-   .wheelf{
-    animation-name: gght;
-    animation-timing-function: linear;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-   }
-   @keyframes gght{
-    from{
-        transform: rotate(0deg);  
-    }
-    to{
-        transform: rotate(350deg);   
-
-    }
-   }
-
-   
-
-    .navbar-brand{
-        width: 8%;
-    }
-    .a i{
-        color: #fb003a;
-    }
-    .a{
-        background: black;
-        padding: 10px 0px;
-    }
-    .a a{
-        color: #fff;
+    .top-bar {
+      background: #f8f9fa;
+      padding: 10px 0;
+      font-size: 14px;
     }
 
-    .a a:hover{
-        text-decoration: none;
-        color: #ff9b9b;
+    .top-bar i {
+      margin-right: 5px;
     }
 
-    .a p{
-        margin-bottom:0px;
+    .social-icons a {
+      color: #333;
+      margin: 0 5px;
+      font-size: 16px;
     }
-    .btn-success {
-        color: #fff;
-        background-color: #a47f7f;
-        border-color: #994f4f;
+
+    .car-section {
+      position: relative;
+      overflow-x: hidden;
+      padding: 50px 0;
     }
-}
 
-@media (max-width:1920px) {}
-
-@media (max-width:1440px) {}
-
-@media (max-width:1024px) {}
-
-@media (max-width:768px) {
-     .navbar-brand{
-        width: 20%;
+    .car-anim-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      animation: moveCar 6s linear infinite;
     }
-}
 
-@media (max-width:576px) {
-
-     .navbar-brand{
-        width: 40%;
+    .car-body {
+      width: 40%;
+      z-index: 2;
     }
-}
 
-@media (max-width:425px) {}
+    .wheel {
+      width: 7%;
+      position: absolute;
+      z-index: 2;
+      animation: spinWheel 1s linear infinite;
+    }
 
-@media (max-width:375px) {}
+    .wheel.front {
+      left: 56.5%;
+      bottom: 10px;
+    }
 
-@media (max-width:320px) {}
+    .wheel.back {
+      left: 36.25%;
+      bottom: 10px;
+    }
+
+    @keyframes spinWheel {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes moveCar {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    .btn-readmore {
+      margin-top: 15px;
+    }
+
+    .github-download {
+      margin: 50px 0;
+    }
+
+    .github-download a {
+      color: black;
+      text-decoration: none;
+    } */
